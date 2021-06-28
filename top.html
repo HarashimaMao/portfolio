@@ -40,6 +40,17 @@
               top: 20%;
               left: 30%;
           }
+
+            .img_wrap img{
+                transition-duration: 0.5s;
+            }
+
+            .img_wrap:hover img{
+                transform: scale(1.2);
+                transition-duration: 0.5s;
+           }
+
+          
         </style>
     </head>
     <body>
@@ -49,10 +60,12 @@
             </div>
             <div class="header-list">
                 <ul>
-                    <li><a href="about.html"><img src="images/about.png" alt="about" height="20px"></a></li>
-                    <li><a href="works.html"><img src="images/works.png" alt="works" height="20px"></a></li>
-                    <li><a href="contact.html"><img src="images/contact.png" alt="contact" height="20px"></a></li>
-                    <li><a href="https://www.instagram.com/mao_yz/?hl=en"><img src="images/insta.png" alt="insta" height="20px"></a></li>
+                    <div class="img_wrap">
+                        <li><a href="about.html"><img id="headers1" src="images/about.png" alt="about" height="20px"></a></li>
+                        <li><a href="works.html"><img  id="headers2" src="images/works.png" alt="works" height="20px"></a></li>
+                        <li><a href="contact.html"><img id="headers3" src="images/contact.png" alt="contact" height="20px"></a></li>
+                        <li><a href="https://www.instagram.com/mao_yz/?hl=en"><img id="headers4" src="images/insta.png" alt="insta" height="20px"></a></li>
+                    </div>
                 </ul>
             </div>
         </div>       
@@ -65,7 +78,7 @@
         <script>
         /*global $*/
             $(function(){
-                $('.header').hover(
+                $('.hover').hover(
                     function(){
                         $(this).animate({
                             'font-size':'20px'
