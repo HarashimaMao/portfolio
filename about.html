@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang ="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>HarashimaMao</title>
+        <style>
+        
+        
+          body {
+              margin: 0;
+              background-image: url(images/my_home_page2.jpg);
+              background-size: cover;
+          }
+          
+          .header {
+              width: 100%;
+              display: flex;
+              background-color: #D3648A;
+              justify-content: space-between;
+              border-radius: 10px;
+          }
+          
+          .header-logo {
+              margin-top: 15px;
+              margin-left: 30px;
+          }
+   
+          ul {
+              list-style: none;
+              margin-right: 5px;
+              
+          }
+          
+          li {
+              display: inline-block;
+              margin-right: 50px;
+          }        
+          
+          .main {
+              font-weight: 700;
+              color: #FFF;
+              font-family: "M PLUS Rounded 1c";
+              text-align: center;
+          }
+          
+          .main img {
+              position: absolute;
+              top: 23%;
+              margin-right: -50%;
+              transform: translate(-50%,-50%)
+          }
+          
+          .container {
+              text-align: center;
+              font-size: 14px;
+              margin: 0;
+              position: absolute;
+              top: 60%;
+              left: 50%;
+              margin-right: -50%;
+              transform: translate(-50%,-50%)
+          }
+          
+          .square {
+              position: relative;
+              width: 500px;
+              padding: 9px;
+              background: #F0B15B;
+              border-radius: 10%;
+          }
+          
+        </style>
+        
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-logo">
+                <a href="top.html"><img src="images/MAOlogo.png" width="70px"></a>
+            </div>
+            <div class="header-list">
+                <ul>
+                    <li><a href="about.html"><img src="images/about.png" alt="about" height="20px"></a></li>
+                    <li><a href="works.html"><img src="images/works.png" alt="works" height="20px"></a></li>
+                    <li><a href="contact.html"><img src="images/contact.png" alt="contact" height="20px"></a></li>
+                    <li><a href="https://www.instagram.com/mao_yz/?hl=en"><img src="images/insta.png" alt="insta" height="20px"></a></li>
+                </ul>
+            </div>
+        </div>    
+        
+        <div class="main">
+            <img src="images/about.png" alt="about">
+            <div class="container">
+                <div class="square">
+                <div class="profile">
+                    <h1>MAO</h1>
+                    <p>1998年11月26日生まれ</br>東京都あきる野市出身</br>2019年・文化服装学院卒業</br>卒業後は、コンサルティング会社で働く</br>2020年・退社</br>2020年〜アルバイト</br>2021年〜アルバイトをしながら、</br>プログラミングの学習を始め、現在に至る</p>
+                </div>
+            
+                <div class="license">
+                    <h1>資格</h1>
+                    <p>ファッションビジネス検定3級</br>ファッション色彩検定3級</br>フォーマル検定準2級</p>
+                </div>
+                </div>
+            </div>
+        
+        
+        </div>
+        
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+             $(function(){
+                $('.header').hover(
+                    function(){
+                        $(this).animate({
+                            'font-size':'20px'
+                        });
+                    },
+                    function(){
+                        $(this).animate({
+                            'font-size':'16px'
+                        });
+                    });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang ="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>HarashimaMao</title>
+        <style>
+          body {
+              margin: 0;
+              background-image: url(images/my_home_page1.jpg);
+              background-size: cover;
+          }
+          
+          .header {
+              width: 100%;
+              display: flex;
+              background-color: #D3648A;
+              justify-content: space-between;
+              border-radius: 10px;
+          }
+          
+          .header-logo {
+              margin-top: 15px;
+              margin-left: 30px;
+          }
+   
+          ul {
+              list-style: none;
+              margin-right: 5px;
+              
+          }
+          
+          li {
+              display: inline-block;
+              margin-right: 50px;
+          }
+          
+          .main {
+              margin: 0;
+              position: absolute;
+              top: 20%;
+              left: 30%;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-logo">
+                <a href="top.html"><img src="images/MAOlogo.png" width="70px"></a>
+            </div>
+            <div class="header-list">
+                <ul>
+                    <li><a href="about.html"><img src="images/about.png" alt="about" height="20px"></a></li>
+                    <li><a href="works.html"><img src="images/works.png" alt="works" height="20px"></a></li>
+                    <li><a href="contact.html"><img src="images/contact.png" alt="contact" height="20px"></a></li>
+                    <li><a href="https://www.instagram.com/mao_yz/?hl=en"><img src="images/insta.png" alt="insta" height="20px"></a></li>
+                </ul>
+            </div>
+        </div>       
+        
+        <div class="main">
+            <img src="images/portrait.png" width="300px"></img>
+        </div>
+
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+        /*global $*/
+            $(function(){
+                $('.header').hover(
+                    function(){
+                        $(this).animate({
+                            'font-size':'20px'
+                        });
+                    },
+                    function(){
+                        $(this).animate({
+                            'font-size':'16px'
+                        });
+                    });
+            });
+        </script>
+    </body>
+</html>

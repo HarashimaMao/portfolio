@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang ="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>HarashimaMao</title>
+        <style>
+          body {
+              margin: 0;
+              background-image: url(images/my_home_page4.jpg);
+              background-size: cover;
+          }
+          
+          .header {
+              width: 100%;
+              display: flex;
+              background-color: #D3648A;
+              justify-content: space-between;
+              border-radius: 10px;
+          }
+          
+          .header-logo {
+              margin-top: 15px;
+              margin-left: 30px;
+          }
+   
+          ul {
+              list-style: none;
+              margin-right: 5px;
+              
+          }
+          
+          li {
+              display: inline-block;
+              margin-right: 50px;
+          }
+          
+          .main {
+              color: #FFF;
+              font-family: "M PLUS Rounded 1c";
+              text-align: center;
+          }
+          
+          .main img {
+              position: absolute;
+              top: 23%;
+              margin-right: -50%;
+              transform: translate(-50%,-50%)
+              
+          }
+          
+          .container {
+              font-weight: 700;
+              margin: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-right: -50%;
+              transform: translate(-50%,-50%)
+          }
+         
+          .square {
+              margin-top: 90px;
+              position: relative;
+              width: 500px;
+              padding: 6px;
+              background: #F0B15B;
+              border-radius: 10%;
+          }
+          
+          form {
+              text-align: left;
+              margin: 20px;
+          }
+          
+          .username {
+              border-radius: 10px;
+              padding: 5px 8px;
+          }
+          
+          input.username {
+              width: 150px;
+              margin-left: 5px;
+              
+          }
+          
+          .email {
+              border-radius: 10px;
+              padding: 5px 8px;
+              margin: 5px;
+          }
+          
+          input.email {
+              width: 300px;
+              margin-left: 35px;
+          }
+          
+          .comment {
+              outline-color: #FFF;
+              border-radius: 10px;
+              padding: 5px 8px;
+              margin: 5px;
+          }
+          
+          input.comment {
+              width: 430px;
+              height: 150px;
+              margin: 5px;
+          }
+          
+          .btn {
+              padding-left: 30px;
+              border-radius: 10px;
+              padding: 5px 8px;
+              background-color: #FFF;
+          }
+         
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="header">
+            <div class="header-logo">
+                <a href="top.html"><img src="images/MAOlogo.png" width="70px"></a>
+            </div>
+            <div class="header-list">
+                <ul>
+                    <li><a href="about.html"><img src="images/about.png" alt="about" height="20px"></a></li>
+                    <li><a href="works.html"><img src="images/works.png" alt="works" height="20px"></a></li>
+                    <li><a href="contact.html"><img src="images/contact.png" alt="contact" height="20px"></a></li>
+                    <li><a href="https://www.instagram.com/mao_yz/?hl=en"><img src="images/insta.png" alt="insta" height="20px"></a></li>
+                </ul>
+            </div>
+        </div>      
+        
+        <div class="main">
+            <img src="images/contact.png" alt="contact">
+            
+            <div class="container">
+            <div class="square">
+                <p>お気軽にご連絡ください。</p>
+                <form>
+                    full name<input type="text" class="username"/></br>
+                    email<input type="text" class="email" /></br>
+                    comment<input type="text" class="comment" /></br>
+                    <input type="button" value="送信" class="btn"/>
+                </form>
+            </div>
+            </div>
+        </div>
+        
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+             $(function(){
+                $('.header').hover(
+                    function(){
+                        $(this).animate({
+                            'font-size':'20px'
+                        });
+                    },
+                    function(){
+                        $(this).animate({
+                            'font-size':'16px'
+                        });
+                    });
+            });
+        </script>
+    </body>
+</html>
